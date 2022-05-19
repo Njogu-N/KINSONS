@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #420303d1),
+    url("images/IMG-20220509-WA0023.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+h2 {
+  text-align: center;
+  font-size: 70px;
+  padding: auto;
+}
+
+.logo {
+  width: 100;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+}
+.banner-text {
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+}
+.banner-text h1 {
+  font-size: 70px;
+}
+.banner-text p {
+  font-size: 20px;
+  font-style: italic;
+  padding-top: 28px;
+  margin-bottom: 18px;
+}
+.banner-btn {
+  margin: auto 0%;
+  text-align: center;
+}
+.banner-btn a {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 30 10px;
+  padding: 10px 0;
+  color: #fff;
+  border: 2px solid #fff;
+  position: relative;
+  z-index: 1;
+}
+.banner-btn a span {
+  width: 0;
+  height: 40;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: #fff;
+  z-index: -1;
+}
+.banner-btn a:hover span {
+  width: 150;
+  transition: 0.5s;
+}
+.banner-btn a:hover {
+  color: black;
+}
+#sideNav {
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background-color: #420303d1;
+  z-index: 2;
+}
+nav ul li {
+  list-style: none;
+  margin: 50px 20px;
+  font-size: 15;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+#menubtn {
+  width: 50px;
+  height: 50px;
+  background: #420303d1;
+  text-align: center;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#menubtn img {
+  width: 20px;
+  margin-top: 15px;
+}
+
+/*--feature--*/
+
+#feature {
+  width: 100%;
+  padding: 70px 0;
+}
+.title-text {
+  text-align: center;
+  padding-bottom: 70px;
+  padding: 30px;
+}
+.title-text p {
+  margin: auto;
+  font-size: 20px;
+  color: #420303d1;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.title-text h1 {
+  font-size: 50px;
+}
+
+.title-text p::after {
+  content: "";
+  width: 50px;
+  height: 35px;
+  background: linear-gradient(#420303d1, #fff);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(1deg);
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+.feature-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.features {
+  flex-basis: 50%;
+}
+
+.features-img {
+  flex-basis: 50%;
+  margin: auto;
+}
+
+.features-img img {
+  width: 75%;
+  border-radius: 8px;
+}
+
+.features h1 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #420303d1;
+}
+
+.features-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.feature-icon .fa {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 8px;
+  color: #420303d1;
+  border: 1px solid #420303d1;
+}
+
+.feature-text p {
+  padding: 0 20px;
+  text-align: initial;
+}
+
+@media screen and (max-width: 400px) {
+
+  .title-text h1 {
+    font-size: 35px;
+  }
+  #features {
+    flex-basis: 70%;
+    /* text-align: inherit; */
+  }
+  .features-img {
+    flex-basis: 100%;
+  }
+  .features-img img {
+    width: 100%;
+    border-radius: 8px;
+    margin: auto;
+  }
+/* added code */
+  .feature-box {
+    width: 100%;
+    margin: auto;
+    display: inline; 
+    align-items: center;
+    text-align: center;
+  }
+  /* .features-desc {
+      display: inline-block;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+  } */
+  .feature-icon .fa {
+    width: 50px;
+    margin-left: 10px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #420303d1;
+    border: 1px solid #420303d1;
+  }
+  .features h1 {
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .banner-text h1 {
+    font-size: 60px;
+  }
+  .banner-btn a {
+    display: block;
+    margin: 20px auto;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .banner-text h2 {
+    font-size: 35px;
+  }
+}
+
+/*--service--*/
+
+#service{
+  width: 100%;
+  padding: 70px 0;
+  background: #efefef;
+}
